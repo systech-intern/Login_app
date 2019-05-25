@@ -31,6 +31,7 @@
             android:layout_gravity="top|center"
             android:src="@drawable/salahuddin"
             app:civ_border_width="1dp"
+            android:layout_marginTop="10dp"
             app:civ_border_color="#FF000000"/>
 
         <LinearLayout
@@ -38,28 +39,31 @@
             android:gravity="center"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/uploadButtonId"
                 android:layout_width="wrap_content"
-                android:layout_height="38dp"
+                android:layout_height="33dp"
                 android:background="@drawable/backdesign"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:textStyle="bold"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="3dp"
                 android:text="@string/upload_photo">
             </Button>
 
             <TextView
                 android:id="@+id/txtPhotoNameId"
-                android:layout_width="162dp"
-                android:layout_height="38dp"
-                android:padding="10dp"
-                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
                 android:text="@string/salahuddin_jpg"
                 android:gravity="center"
+                android:maxLength="18"
                 android:textColor="#292626"
                 android:textStyle="bold">
             </TextView>
@@ -68,7 +72,8 @@
                 android:id="@+id/completeImageId"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:padding="10dp"
+                android:padding="8dp"
+                android:visibility="invisible"
                 app:srcCompat="@drawable/checked" />
 
         </LinearLayout>
